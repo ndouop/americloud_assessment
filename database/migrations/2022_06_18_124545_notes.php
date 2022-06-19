@@ -15,8 +15,7 @@ return new class extends Migration
     {
         Schema::create('notes', function (Blueprint $table) {
             $table->id();
-            $table->string('resource_type');
-            $table->string('resource_id');
+            $table->morphs('resource');
             $table->string('content');
             $table->timestamps();
         });

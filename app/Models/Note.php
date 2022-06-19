@@ -30,4 +30,9 @@ class Note extends Model
         'resource_id' => 'string',
         'content' => 'string',
     ];
+
+    public function resource()
+    {
+        return $this->morphTo();
+    }
 }

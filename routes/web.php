@@ -13,6 +13,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+/**
+ * catch any request and sent it to vuejs
+ */
+Route::get('/{any}', function(){
+    return view('app');
+})->where('any','.*');

@@ -41,4 +41,13 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    /**
+     * Get all of the user note.
+     */
+    public function notes()
+    {
+        return $this->morphMany(Note::class, 'resource');
+    }
+
 }

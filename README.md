@@ -39,3 +39,5 @@ http://localhost
 <p align="center">
     <img src="https://fv9-6.failiem.lv/thumb_show.php?i=ra5ynfek6&view">
 </p>
+
+### Licence MIT
